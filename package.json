@@ -1,0 +1,30 @@
+{
+  "name": "wunderground-api-client",
+  "version": "0.1.0",
+  "description": "Query the wunderground.com API using Node.js",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "wunder-api": "./bin/wunder_api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/lukewendling/wunderground-api-client"
+  },
+  "keywords": [
+    "weather",
+    "wunderground",
+    "api"
+  ],
+  "author": "Luke Wendling <luke@lukewendling.com>",
+  "license": "MIT",
+  "dependencies": {
+    "q": "~0.9.7",
+    "optimist": "~0.6"
+  }
+}
