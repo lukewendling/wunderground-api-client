@@ -4,10 +4,12 @@
   "description": "Query the wunderground.com API using Node.js",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "lib": "lib",
+    "bin": "bin"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "bin": {
     "wunder-api": "./bin/wunder_api.js"
@@ -26,5 +28,9 @@
   "dependencies": {
     "q": "~0.9.7",
     "optimist": "~0.6"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
   }
 }
