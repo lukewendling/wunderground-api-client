@@ -11,6 +11,6 @@ var WunderApi = require('../index').WunderApi,
   wunder = new WunderApi(argv._[0], null, argv.features);
 
 wunder.query(argv._[1])
-  .then(function (result) {console.log(result)})
-  .fail(function (err) {console.log(err)})
-  .done();;
+  .then(function (result) {console.log(result);})
+  .fail(function (err) {console.log(err);})
+  .done();
