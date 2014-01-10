@@ -29,7 +29,7 @@ var WunderApi = require('./').WunderApi;
 
 // see http://www.wunderground.com/weather/api/d/docs?d=data/index&MR=1
 // for expected features values and format of the location arg
-var combined = new WunderApi(APIKEY, null, 'geolookup', 'forecast');
+var combined = new WunderApi(APIKEY, {lang: 'ES'}, 'geolookup', 'forecast');
 
 combined.query('TX/Austin')
   .then(function (result) {console.log(result)})
